@@ -14,7 +14,7 @@ putchar(z);
 }
 for (Lcase = 'a'; Lcase <= 'f'; Lcase++)
 {
-putchar(lcase);
+putchar(Lcase);
 }
 putchar('\n');
 return (0);
