@@ -8,13 +8,13 @@ int main(void)
 {
 int z;
 char Lcase;
-for (z = '0'; z <= '9' z++)
+for (z = '0'; z <= '9';	z++)
 {
 putchar(z);
 }
 for (Lcase = 'a'; Lcase <= 'f'; Lcase++)
 {
-putchar(Lcase);
+putchar(lcase);
 }
 putchar('\n');
 return (0);
