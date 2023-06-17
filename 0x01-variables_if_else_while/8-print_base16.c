@@ -16,5 +16,6 @@ for (Lcase = 'a'; Lcase <= 'f'; Lcase++)
 {
 putchar(Lcase);
 }
+putchar('\n');
 return (0);
 }
