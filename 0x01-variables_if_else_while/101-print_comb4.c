@@ -1,32 +1,29 @@
 #include <stdio.h>
 /**
- * main - All possible different combinations of three digits
+ *main - All possible different combinations of three digits
  *
  * Return: Always 0
  */
 int main(void)
 {
-int n, m, o;
-for (n = '0'; n <= '9'; n++)
-{
-for (m = '0'; m <= '9'; m++)
-{
-for (o = '0'; o <= '9'; o++)
-{
-if (o != m && o != n && m != n)
-{
-putchar(n);
-putchar(m);
-putchar(o);
-if (!(n == '7' && m == '8' && o == '9'))
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-}
-putchar('\n');
-return (0);
+    int i, j, k;
+    for (i = 0; i <= 7; i++)
+    {
+        for (j = i + 1; j <= 8; j++)
+	{
+            for (k = j + 1; k <= 9; k++)
+	    {
+                putchar(i + '0');
+                putchar(j + '0');
+                putchar(k + '0');
+                if (!(i == 7 && j == 8 && k == 9))
+		{
+                    putchar(',');
+                    putchar(' ');
+                }
+            }
+        }
+    }
+    putchar('\n');
+    return 0;
 }
