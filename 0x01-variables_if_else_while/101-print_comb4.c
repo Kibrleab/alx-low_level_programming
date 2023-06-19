@@ -16,7 +16,7 @@ for (o = '0'; o <= '7'; o++)
 if (o != m && o != n && m != n)
 {
 putchar(n);
-utchar(m);
+putchar(m);
 putchar(o);
 if (!(n == '9' && m == '8' && o == '7'))
 {
