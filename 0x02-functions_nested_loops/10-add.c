@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * add - Adds two integers.
  * @x: The first integer to be added.
