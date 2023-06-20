@@ -13,7 +13,7 @@ for (k = 97; k <= 122; k++)
 {
 	_putchar(k);
 }
-}
+
 _putchar('\n');
 }
-
+}
