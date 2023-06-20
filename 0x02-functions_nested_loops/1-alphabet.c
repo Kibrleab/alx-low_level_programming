@@ -4,10 +4,10 @@
  *
  * Return:Always 0
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int k;
-	for (k = 'a'; k <= 'z'; k++)
+	for (k = 97; k <= 122; k++)
 	{
 		_putchar(k);
 	}
