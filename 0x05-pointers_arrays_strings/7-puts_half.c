@@ -22,6 +22,5 @@ void puts_half(char *str)
 		for (j = (odd -1) / 2; j < odd - 1; j++)
 			_putchar(str[j + 1]);
 	}
-}
 _putchar('\n');
 }
