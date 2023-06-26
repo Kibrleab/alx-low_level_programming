@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * puts2 - nt every other character
- *@*str: pointer
- *@l: frist int
- @i second int
+ *@str: pointer to string
+ *Return: nothing
  */
 void puts2(char *str)
 {
