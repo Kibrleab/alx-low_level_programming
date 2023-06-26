@@ -1,25 +1,38 @@
 #include "main.h"
-
 /**
- * puts2 - prints one char out of 2 of a string
- * followed by a new line
- * @str: string to print the chars from
+ * _atoi -  string to an integer
+ * @s: pointer to  string
+ *
+ * Return: n
  */
-void puts2(char *str)
+int _atoi(char *s)
 {
-	int len, i;
+	int i = 0, d = 0, n = 0, now = 0, f = 0, digit = 0;
 
-	len = 0;
+	while (s[now] != '\0')
+		now++;
 
-	while (str[len] != '\0')
+	while (i < now && f == 0)
 	{
-		len++;
+		if (s[i] == '-')
+			++d;
+
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
+		}
+		i++;
 	}
 
-	for (i = 0; i < len; i += 2)
-	{
-		_putchar(str[i]);
-	}
+	if (f == 0)
+		return (0);
 
-	_putchar('\n');
+	return (n);
 }
