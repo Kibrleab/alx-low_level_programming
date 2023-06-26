@@ -2,7 +2,6 @@
 /**
  * puts_half - prints half of a string
  *@str: pointer to string
- *
  */
 void puts_half(char *str)
 {
@@ -19,7 +18,7 @@ void puts_half(char *str)
 		}
 	else if (odd % 2)
 	{
-		for (j = (odd -1) / 2; j < odd - 1; j++)
+		for (j = (odd - 1) / 2; j < odd - 1; j++)
 			_putchar(str[j + 1]);
 	}
 _putchar('\n');
