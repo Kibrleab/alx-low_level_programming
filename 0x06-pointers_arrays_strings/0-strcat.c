@@ -2,12 +2,11 @@
 /**
  * _strcat - function that concatenates two strings
  * @dest: string
- * @src: string 
+ * @src: string
  */
 char *_strcat(char *dest, char *src)
 {
- int lengthD, lengthS;
-
+int lengthD, lengthS;
 	lengthD = 0;
 	lengthS = 0;
 
