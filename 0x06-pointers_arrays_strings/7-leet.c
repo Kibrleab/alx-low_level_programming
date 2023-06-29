@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * leet - change vowels to numbers.
- * @s: analized string.
- *
+ * @s: analized  
  * Return: String with all vowels changed.
  */
 char *leet(char *s)
