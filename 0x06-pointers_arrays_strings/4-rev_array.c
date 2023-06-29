@@ -1,21 +1,22 @@
 #include "main.h"
 /**
- * string_toupper - change lowercase letters to uppercase.
- * @s: analized string.
- *
- * Return: String with all letters Uppercased.
+ * reverse_array - prints reverse array.
+ * @a: array to be compared.
+ * @n: size of array.
+ * Return: reversed array.
  */
-char *string_toupper(char *s)
+void reverse_array(int *a, int n)
 {
-	int i = 0;
+	int swap, begin, end;
 
-	while (*(s + i) != '\0')
+	begin = 0;
+	end = n - 1;
+	while (begin < end)
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-		{
-			*(s + i) = *(s + i) - 32;
-		}
-		i++;
+		swap = *(a + begin);
+		*(a + begin) = *(a + end);
+		*(a + end) = swap;
+		begin++;
+		end--;
 	}
-	return (s);
 }
