@@ -9,10 +9,10 @@
 #include <string.h>
 
 
-int _putchar(char c)
+char *_strstr(char *haystack, char *needle)
 
 {
 
-    return putchar(c);
+    return strstr(haystack, needle);
 
 }
